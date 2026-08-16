@@ -2,6 +2,10 @@
 
 A lightweight animated loading spinner designed for the GenLayer Portal.
 
+<p align="center">
+  <img src="genlayer-validator-pulse-bw.svg" width="96" height="96" alt="GenLayer Portal Spinner" />
+</p>
+
 The animation keeps the GenLayer mark recognizable while using a simple three-part pulse to suggest validators progressing toward consensus. It is intentionally minimal so it remains clear in small loading states and frequent Portal interactions.
 
 ## Features
@@ -17,6 +21,7 @@ The animation keeps the GenLayer mark recognizable while using a simple three-pa
 
 ## Files
 
+- `genlayer-validator-pulse-bw.svg` — animated black/white spinner preview
 - `spinner.svg` — standalone animated SVG
 - `spinner.css` — reusable CSS animation
 - `index.html` — light/dark browser preview
