@@ -1,0 +1,30 @@
+/* GenLayer Portal Spinner
+   Monochrome version. The spinner inherits currentColor.
+*/
+
+.genlayer-spinner {
+  width: 32px;
+  height: 32px;
+  color: currentColor;
+}
+
+.genlayer-spinner .gl-piece {
+  fill: currentColor;
+  animation: gl-validator-pulse 1.08s cubic-bezier(.4, 0, .2, 1) infinite;
+}
+
+.genlayer-spinner .gl-left  { animation-delay: 0s; }
+.genlayer-spinner .gl-core  { animation-delay: .18s; }
+.genlayer-spinner .gl-right { animation-delay: .36s; }
+
+@keyframes gl-validator-pulse {
+  0%, 100% { opacity: .20; }
+  34%      { opacity: 1; }
+  62%      { opacity: .42; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .genlayer-spinner .gl-piece {
+    animation-duration: 2.2s;
+  }
+}
