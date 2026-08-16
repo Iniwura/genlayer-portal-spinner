@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 97.76 91.93"
+     width="32"
+     height="32"
+     role="status"
+     aria-label="Loading">
+  <style>
+    :root {
+      --gl-spinner-color: #000000;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --gl-spinner-color: #ffffff;
+      }
+    }
+
+    .gl-piece {
+      fill: var(--gl-spinner-color);
+      animation: gl-validator-pulse 1.08s cubic-bezier(.4, 0, .2, 1) infinite;
+    }
+
+    .gl-left   { animation-delay: 0s; }
+    .gl-core   { animation-delay: .18s; }
+    .gl-right  { animation-delay: .36s; }
+
+    @keyframes gl-validator-pulse {
+      0%, 100% { opacity: .20; }
+      34%      { opacity: 1; }
+      62%      { opacity: .42; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .gl-piece {
+        animation-duration: 2.2s;
+      }
+    }
+  </style>
+
+  <!-- Official GenLayer mark geometry, unchanged -->
+  <polygon class="gl-piece gl-left"
+    points="44.26 32.35 27.72 67.12 43.29 74.9 0 91.93 44.26 0 44.26 32.35"/>
+  <polygon class="gl-piece gl-right"
+    points="53.5 32.35 70.04 67.12 54.47 74.9 97.76 91.93 53.5 0 53.5 32.35"/>
+  <polygon class="gl-piece gl-core"
+    points="48.64 43.78 58.33 62.94 48.64 67.69 39.47 62.92 48.64 43.78"/>
+</svg>
